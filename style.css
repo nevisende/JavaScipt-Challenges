@@ -1,0 +1,15 @@
+.container {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item {
+  border: 1px dashed blue;
+  height: 200px;
+  box-sizing: border-box;
+  max-width: 50%;
+}
