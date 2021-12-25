@@ -1,11 +1,5 @@
-const obj = {};
-
-function isEmpty(obj) {
-    // write your solution here
-
-    return obj
-    && Object.keys(obj).length === 0
-    && Object.getPrototypeOf(obj) === Object.prototype
-}
-
-console.log(`is empty object: ${isEmpty(obj)}`)
+function fibonacci(n) {
+  return n < 1 ? 0
+  : n <= 2 ? 1
+  : fibonacci(n - 1) + fibonacci(n - 2)}
+console.log( fibonacci(10))
