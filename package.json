@@ -2,11 +2,12 @@
   "name": "js-test",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "script.js",
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "nodemon": "^2.0.15"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node script.js"
   },

@@ -1,9 +1,9 @@
-const number = '+919876543210';
+const DAY_IN_MILLISECONDS = 1000 * 60 * 60 * 24;
 
-function validateMobile(number) {
-    // write your solution here
+function getDaysBetweenDates(dateText1, dateText2) {
+    let date1Arr = dateText1.split('/');
+    let date2Arr = dateText2.split('/');
+-    return Math.round((new Date(date2Arr[2],date2Arr[0]-1,date2Arr[1]) - new Date(date1Arr[2],date1Arr[0]-1,date1Arr[1]))/DAY_IN_MILLISECONDS)
+  }
+  console.log(`Days difference: ${getDaysBetweenDates('10/15/2020', '12/1/2020')}`)
 
-    return number.replace(/^\+91/g,'').replace(/^[0|+]/,'').length 
-}
-
-console.log(`is a valid Indian mobile number: ${validateMobile(number)}`)
