@@ -9,6 +9,7 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
+    "start": "nodemon script.js",
     "test": "node script.js"
   },
   "keywords": [],
